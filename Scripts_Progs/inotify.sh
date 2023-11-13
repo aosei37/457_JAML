@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-watchedDir="/home/bossqwea/ENEE457/inotify_dir"
+watchedDir="FIND A WAY TO TRACK ALL DIRECTORIES ON SYSTEM"
 
 inotifywait \
   --monitor "$watchedDir" \
