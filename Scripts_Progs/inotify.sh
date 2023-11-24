@@ -1,11 +1,12 @@
 #!/bin/bash
 
 
-watchedDir="FIND A WAY TO TRACK ALL DIRECTORIES ON SYSTEM"
+watchedDir=$1
 
 inotifywait \
   --monitor "$watchedDir" \
   --exclude '\.swp|\.swx' \
+  -r \
   -e create \
   -e delete \
   -e modify \
